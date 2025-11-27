@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 5 - Animacions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><a href="index.html">Exercici 005</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home (Transicions)</a></li>
+                <li><a href="galeria.html" class="active">Galeria (Animacions)</a></li>
+                <li><a href="guia-estil.html">Guia d’estil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <h1>Animacions CSS (@keyframes)</h1>
+        <p>Demostració de control d'animacions: durada, direcció, iteracions, i scroll-reveal.</p>
+
+        <hr>
+
+        <h2>Loader amb Animació Infinita</h2>
+        <div class="loader"></div>
+
+        <hr>
+
+        <h2>Seqüència d'Animació Complexa</h2>
+        <p>Aquesta animació combina $transform$ ($translate$, $scale$, $rotate$), $opacity$, i canvis de color en 2 iteracions amb direcció $alternate$.</p>
+        <div class="animated-box"></div>
+
+        <hr>
+
+        <h2>Animació amb Iteració Infinita</h2>
+        <div class="infinite-pulse">
+            Aquesta caixa fa un "pulse" sense parar (infinite).
+        </div>
+
+        <hr>
+
+        <h2>Scroll-Reveal (amb Fallback)</h2>
+        <p>Si el teu navegador ho suporta, els blocs següents apareixeran amb un desplaçament suau mentre fas scroll.</p>
+
+        <div style="height: 60vh;">&nbsp;</div> <section class="scroll-reveal-container">
+            <div class="scroll-reveal-block">
+                Bloc 1 - Scroll Reveal
+            </div>
+            <div class="scroll-reveal-block">
+                Bloc 2 - Scroll Reveal
+            </div>
+            <div class="scroll-reveal-block">
+                Bloc 3 - Scroll Reveal
+            </div>
+        </section>
+        
+    </main>
+
+</body>
+</html>

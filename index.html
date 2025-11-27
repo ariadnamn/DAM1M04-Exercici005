@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 5 - Transicions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><a href="index.html">Exercici 005</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home (Transicions)</a></li>
+                <li><a href="galeria.html">Galeria (Animacions)</a></li>
+                <li><a href="guia-estil.html">Guia d’estil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Transicions CSS</h1>
+            <p>Practiquem l'efecte de canvi suau entre estats amb diferents funcions de temps.</p>
+            <a href="#targetes" class="btn">
+                Descobreix les Targetes
+                <span class="material-icons-outlined">arrow_forward</span>
+            </a>
+        </section>
+        
+        <hr>
+
+        <section id="targetes">
+            <h2>Targetes Interactives amb :hover</h2>
+            <div class="cards-interactive">
+                
+                <article class="card card-timing-linear">
+                    <div class="card-image-wrapper">
+                        <img src="assets/img/card-image-1.jpg" alt="Imatge 1" class="card-image default-image">
+                        <img src="assets/img/card-image-2.jpg" alt="Imatge 2 Hover" class="card-image hover-image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Linear <span class="material-icons-outlined">compare_arrows</span></h3>
+                        <p>La transició és uniforme, sense acceleració ni desacceleració. $transition-timing-function: linear;$</p>
+                    </div>
+                </article>
+
+                <article class="card card-timing-ease-in-out">
+                    <div class="card-image-wrapper">
+                        <img src="assets/img/card-image-3.jpg" alt="Imatge 3" class="card-image default-image">
+                        <img src="assets/img/card-image-4.jpg" alt="Imatge 4 Hover" class="card-image hover-image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ease-In-Out <span class="material-icons-outlined">speed</span></h3>
+                        <p>Lenta a l'inici i al final, ràpida al mig. Molt comuna. $transition-timing-function: ease-in-out;$</p>
+                    </div>
+                </article>
+
+                <article class="card card-timing-ease-out">
+                    <div class="card-image-wrapper">
+                        <img src="assets/img/card-image-5.jpg" alt="Imatge 5" class="card-image default-image">
+                        <img src="assets/img/card-image-6.jpg" alt="Imatge 6 Hover" class="card-image hover-image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ease-Out <span class="material-icons-outlined">exit_to_app</span></h3>
+                        <p>Ràpida a l'inici i lenta al final (desacceleració). $transition-timing-function: ease-out;$</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Transicions de Text</h2>
+            <p>Observa el canvi de color i l'espaiat de les lletres al passar el ratolí.</p>
+            <ul class="secondary-menu">
+                <li><a href="#">Opció 1: Color</a></li>
+                <li><a href="#">Opció 2: Letter Spacing</a></li>
+                <li><a href="#">Opció 3: Color + Spacing</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>
