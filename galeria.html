@@ -31,34 +31,37 @@
   </header>
 
   <main class="container">
-<h2>Animación: Loader</h2>
+
+    <h2 class="section-title">Animaciones</h2>
+
+    <!-- LOADER -->
     <section class="loader-section">
-      <div class="loader"></div>
+      <div class="loader" aria-hidden="true"></div>
       <p class="muted">Loader</p>
     </section>
 
+    <!-- PIEZA ANIMADA PRINCIPAL -->
     <section class="anim-main">
-
-      <h2>Animación principal: bounce & spin</h2>
+      <h3>Pieza principal: bounce & spin & color</h3>
 
       <div class="anim-demo">
-        <div class="anim-piece"></div>
+        <div class="anim-piece" aria-hidden="true"></div>
       </div>
 
       <h3>Modos de repetición</h3>
 
       <div class="anim-boxes">
-        <div class="box alternate"></div>
-        <div class="box infinite"></div>
+        <div class="box alternate" aria-hidden="true"></div>
+        <div class="box infinite" aria-hidden="true"></div>
       </div>
 
-      <h3>Scroll Reveal</h3>
-      <p class="muted">Los elementos aparecen al hacer scroll.</p>
+      <h3>Scroll Reveal (animation-timeline)</h3>
+      <p class="muted">Elementos que aparecen al hacer scroll (con fallback si no es compatible).</p>
 
       <div class="reveal-list">
-        <div class="reveal-item">Elemento revelado 1</div>
-        <div class="reveal-item">Elemento revelado 2</div>
-        <div class="reveal-item">Elemento revelado 3</div>
+        <div class="reveal-item">Don't Smile at Me</div>
+        <div class="reveal-item">When We All Fall Asleep Where Do We Go</div>
+        <div class="reveal-item">Happier Than Ever</div>
       </div>
 
     </section>

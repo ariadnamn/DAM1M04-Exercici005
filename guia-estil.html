@@ -1,115 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de Estilo – HMHAS</title>
-    <link rel="stylesheet" href="estils.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hit Me Hard & Soft — Guía de estilo</title>
 
-    <!-- Material Symbols -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <link rel="stylesheet" href="estils.css">
 </head>
-<body>
+<body class="page page-guide">
 
-    <!-- HEADER FULL WIDTH -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">HMHAS</div>
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="navbar">
+      <a class="brand" href="index.html">HMHAS</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a class="active" href="guia-estil.html">Guía de estilo</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a class="active" href="guia-estilos.html">Guía de estilo</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main class="container page-guide-inner">
 
-    <!-- CONTENEDOR CENTRAL -->
-    <div class="page-guide">
+    <h1>Guía de estilo — HMHAS</h1>
+    <p class="lead">Paleta, tipografías y ejemplos de Material Icons.</p>
 
-        <h1>Guía de Estilo</h1>
-        <p>Esta guía define los colores, tipografías e iconografía utilizados en el sitio web de HMHAS.</p>
-        <br>
+    <!-- COLORES -->
+    <section class="colors">
+      <h2>Paleta de colores</h2>
+      <p>Cada color en HEX / RGB / HSL y versión con alpha.</p>
 
-        <!-- COLORES -->
-        <section>
-            <h2>Paleta de Colores</h2>
-            <p>Estos son los colores principales del diseño.</p>
+      <div class="color-row">
+        <div class="color-swatch" style="background:var(--azul-profundo)"></div>
+        <div class="color-info">
+          <strong>Azul Profundo</strong>
+          <ul>
+            <li>HEX: #0C2B47</li>
+            <li>RGB: 12,43,71</li>
+            <li>HSL: 210° 69% 16%</li>
+            <li>RGBA (alpha 0.6): rgba(12,43,71,0.6)</li>
+          </ul>
+        </div>
+      </div>
 
-            <div class="color-table">
+      <div class="color-row">
+        <div class="color-swatch" style="background:var(--cian-oscuro)"></div>
+        <div class="color-info">
+          <strong>Cian Oscuro</strong>
+          <ul>
+            <li>HEX: #1F4A6F</li>
+            <li>RGB: 31,74,111</li>
+            <li>HSL: 210° 56% 28%</li>
+            <li>RGBA (alpha 0.6): rgba(31,74,111,0.6)</li>
+          </ul>
+        </div>
+      </div>
 
-                <div class="color-row">
-                    <div class="color-box" style="background:#0C2B47;"></div>
-                    <p><strong>Azul Profundo</strong> – #0C2B47</p>
-                </div>
+      <div class="color-row">
+        <div class="color-swatch" style="background:var(--negro)"></div>
+        <div class="color-info">
+          <strong>Negro</strong>
+          <ul>
+            <li>HEX: #1A1A1A</li>
+            <li>RGB: 26,26,26</li>
+            <li>HSL: 0° 0% 10%</li>
+            <li>RGBA (alpha 0.6): rgba(26,26,26,0.6)</li>
+          </ul>
+        </div>
+      </div>
 
-                <div class="color-row">
-                    <div class="color-box" style="background:#1F4A6F;"></div>
-                    <p><strong>Cian Oscuro</strong> – #1F4A6F</p>
-                </div>
+      <div class="color-row">
+        <div class="color-swatch" style="background:var(--blanco-roto)"></div>
+        <div class="color-info">
+          <strong>Blanco Roto</strong>
+          <ul>
+            <li>HEX: #E8E8E8</li>
+            <li>RGB: 232,232,232</li>
+            <li>HSL: 0° 0% 91%</li>
+            <li>RGBA (alpha 0.8): rgba(232,232,232,0.8)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-                <div class="color-row">
-                    <div class="color-box" style="background:#1A1A1A;"></div>
-                    <p><strong>Negro</strong> – #1A1A1A</p>
-                </div>
+    <!-- TIPOGRAFÍA -->
+    <section class="typography">
+      <h2>Tipografía</h2>
 
-                <div class="color-row">
-                    <div class="color-box" style="background:#E8E8E8;"></div>
-                    <p><strong>Blanco Roto</strong> – #E8E8E8</p>
-                </div>
+      <div class="type-sample">
+        <div>
+          <h1 style="font-family:var(--font-title); font-weight:800">H1 — Poppins 800 — 2.25rem</h1>
+          <h2 style="font-family:var(--font-title); font-weight:600">H2 — Poppins 600 — 1.75rem</h2>
+          <h3 style="font-family:var(--font-title); font-weight:400">H3 — Poppins 400 — 1.25rem</h3>
+        </div>
 
-            </div>
-        </section>
+        <div>
+          <p style="font-family:var(--font-body); font-weight:300; font-size:1rem">Texto normal — Inter 300. Line-height y letter-spacing controlados para accesibilidad y legibilidad.</p>
+          <p style="font-family:var(--font-body); font-weight:600; font-size:1rem">Texto destacado — Inter 600.</p>
+        </div>
+      </div>
+      <br>
+      <h3>Alineación baseline — iconos y texto</h3>
+      <p class="baseline">
+        <span class="material-symbols-outlined md-36">home</span>
+        <span>Inicio (alineado al baseline del texto)</span>
+      </p>
+      <br>
+      <h3>Escala tipográfica (rem)</h3>
+      <ul>
+        <li>H1 — 2.25rem</li>
+        <li>H2 — 1.75rem</li>
+        <li>Body — 1rem</li>
+        <li>Small — 0.875rem</li>
+      </ul>
+    </section>
+    <br>
+    <!-- MATERIAL ICONS -->
+    <section class="icons">
+      <h2>Material Icons — ejemplos</h2>
 
-        <!-- TIPOGRAFÍA -->
-        <section class="block-spaced">
-            <h2>Tipografía</h2>
+      <div class="icons-samples">
+        <div class="icon-item">
+          <span class="material-symbols-outlined md-48">home</span>
+          <p>Home — tamaño 48</p>
+        </div>
 
-            <div class="type-scale">
-                <p style="font-size: 32px; font-weight: 700;">Título H1 – 32px</p>
-                <p style="font-size: 24px; font-weight: 600;">Título H2 – 24px</p>
-                <p style="font-size: 18px;">Texto grande – 18px</p>
-                <p style="font-size: 16px;">Texto normal – 16px</p>
-                <p style="font-size: 14px;">Texto pequeño – 14px</p>
-            </div>
-        </section>
+        <div class="icon-item">
+          <span class="material-symbols-outlined md-36" style="font-weight:700">photo_camera</span>
+          <p>Camera — wght 700 (nota: el soporte wght depende de la fuente variable)</p>
+        </div>
 
-        <!-- ICONOS -->
-        <section class="block-spaced">
-            <h2>Iconografía</h2>
-            <p>Los iconos usados provienen de Material Symbols.</p>
+        <div class="icon-item">
+          <button class="icon-btn">
+            <span class="material-symbols-outlined">play_arrow</span>
+            Reproducir
+          </button>
+        </div>
 
-            <div class="icons-grid">
+      </div>
+    </section>
 
-                <div>
-                    <span class="material-symbols-outlined">home</span>
-                    <p>Home</p>
-                </div>
+  </main>
 
-                <div>
-                    <span class="material-symbols-outlined">photo_camera</span>
-                    <p>Cámara</p>
-                </div>
-
-                <div>
-                    <span class="material-symbols-outlined">palette</span>
-                    <p>Paleta</p>
-                </div>
-
-                <div>
-                    <span class="material-symbols-outlined">menu</span>
-                    <p>Menú</p>
-                </div>
-
-            </div>
-        </section>
-
-    </div>
-
-      <!-- FOOTER -->
   <footer class="footer">
     <p>Hit Me Hard & Soft · Ariadna Martinez</p>
   </footer>
-  
+
 </body>
 </html>
