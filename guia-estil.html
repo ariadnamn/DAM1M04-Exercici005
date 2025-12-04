@@ -1,134 +1,115 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercici 5 - Guia d'Estil</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Guía de Estilo – HMHAS</title>
     <link rel="stylesheet" href="estils.css">
+
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo"><a href="index.html">Exercici 005</a></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home (Transicions)</a></li>
-                <li><a href="galeria.html">Galeria (Animacions)</a></li>
-                <li><a href="guia-estil.html" class="active">Guia de estil</a></li>
+    <!-- HEADER FULL WIDTH -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">HMHAS</div>
+
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a class="active" href="guia-estilos.html">Guía de estilo</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
-        
-        <h1>Guia d'estil: Tipografia i icones</h1>
+    <!-- CONTENEDOR CENTRAL -->
+    <div class="page-guide">
 
-        <hr>
+        <h1>Guía de Estilo</h1>
+        <p>Esta guía define los colores, tipografías e iconografía utilizados en el sitio web de HMHAS.</p>
+        <br>
 
-        <h2>Tipografia ($font-family, font-weight, line-height, letter-spacing$)</h2>
-        <p>Utilitzem <strong>Roboto Mono</strong> per a títols i <strong>Roboto</strong> per al cos de text.</p>
+        <!-- COLORES -->
+        <section>
+            <h2>Paleta de Colores</h2>
+            <p>Estos son los colores principales del diseño.</p>
 
-        <section class="font-showcase">
-            <div>
-                <h3>H1 (Roboto Mono) - Mida: 2.441rem</h3>
-            </div>
-            <div>
-                <h3>Paràgraf - Pes 400</h3>
-                <p class="font-example">Aquest és el text base amb pes normal ($font-weight: 400$), utilitzant una $line-height$ de $1.6$ per a millor lectura.</p>
-            </div>
-            <div>
-                <h3>Paràgraf - Pes 300 (Primari)</h3>
-                <p class="font-example weight-300">Aquest text té un pes lleuger ($font-weight: 300$). Assegura't que el contrast sigui adequat.</p>
-            </div>
-            <div>
-                <h3>Paràgraf - Pes 700 (Negreta)</h3>
-                <p class="font-example weight-700">Aquest text és en negreta ($font-weight: 700$). S'utilitza per emfatitzar paraules clau.</p>
-            </div>
-            <div>
-                <h3>Paràgraf - Espaiat i interlínia</h3>
-                <p class="font-example spacing-wide">Aquest text té un $letter-spacing$ més ample. ($0.15em$).</p>
-                <p class="font-example line-height-tight">Aquest text té una interlínia més tancada ($line-height: 1.2$).</p>
-            </div>
-        </section>
+            <div class="color-table">
 
-        <hr>
+                <div class="color-row">
+                    <div class="color-box" style="background:#0C2B47;"></div>
+                    <p><strong>Azul Profundo</strong> – #0C2B47</p>
+                </div>
 
-        <h2>Alineació a baseline (Icona + Text)</h2>
-        <p>Alineem l'icona amb la línia base del text per una harmonia visual.</p>
-        <div class="baseline-example">
-            <span class="material-icons-outlined">check_circle</span>
-            <p>Text alineat a la línia base amb la icona.</p>
-        </div>
+                <div class="color-row">
+                    <div class="color-box" style="background:#1F4A6F;"></div>
+                    <p><strong>Cian Oscuro</strong> – #1F4A6F</p>
+                </div>
 
-        <hr>
+                <div class="color-row">
+                    <div class="color-box" style="background:#1A1A1A;"></div>
+                    <p><strong>Negro</strong> – #1A1A1A</p>
+                </div>
 
-        <h2>Material icons outlined ($opsz, wght, FILL$)</h2>
-        <p>Manipulem les variables de disseny de la font material icons.</p>
-        <section class="icon-showcase">
-            <div class="icon-example">
-                <span class="material-icons-outlined">info</span>
-                <small>Defecte (400)</small>
-            </div>
-            <div class="icon-example">
-                <span class="material-icons-outlined icon-size-36">info</span>
-                <small>Mida 36px</small>
-            </div>
-            <div class="icon-example">
-                <span class="material-icons-outlined icon-wght-900">info</span>
-                <small>Pes 900</small>
-            </div>
-            <div class="icon-example">
-                <span class="material-icons-outlined icon-filled">info</span>
-                <small>FILL 1</small>
+                <div class="color-row">
+                    <div class="color-box" style="background:#E8E8E8;"></div>
+                    <p><strong>Blanco Roto</strong> – #E8E8E8</p>
+                </div>
+
             </div>
         </section>
 
-        <hr>
+        <!-- TIPOGRAFÍA -->
+        <section class="block-spaced">
+            <h2>Tipografía</h2>
 
-        <h2>Botons amb transició d'icona</h2>
-        <p>L'icona canvia el seu pes al passar el ratolí.</p>
-        <a href="#" class="btn-icon-link">
-            Acció
-            <span class="material-icons-outlined">link</span>
-        </a>
+            <div class="type-scale">
+                <p style="font-size: 32px; font-weight: 700;">Título H1 – 32px</p>
+                <p style="font-size: 24px; font-weight: 600;">Título H2 – 24px</p>
+                <p style="font-size: 18px;">Texto grande – 18px</p>
+                <p style="font-size: 16px;">Texto normal – 16px</p>
+                <p style="font-size: 14px;">Texto pequeño – 14px</p>
+            </div>
+        </section>
 
-        <hr>
+        <!-- ICONOS -->
+        <section class="block-spaced">
+            <h2>Iconografía</h2>
+            <p>Los iconos usados provienen de Material Symbols.</p>
 
-        <h2>Paleta de colors</h2>
-        <table class="color-table">
-            <thead>
-                <tr>
-                    <th>Mostra</th>
-                    <th>Nom</th>
-                    <th>HEX</th>
-                    <th>RGB</th>
-                    <th>HSL</th>
-                    <th>RGBA (Alpha)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><div class="color-swatch" style="background-color: var(--color-primary);"></div></td>
-                    <td>Primary</td>
-                    <td>#1E88E5</td>
-                    <td>rgb(30, 136, 229)</td>
-                    <td>hsl(210, 77%, 51%)</td>
-                    <td>rgba(30, 136, 229, 0.7)</td>
-                </tr>
-                <tr>
-                    <td><div class="color-swatch" style="background-color: var(--color-secondary);"></div></td>
-                    <td>Secondary</td>
-                    <td>#FFB300</td>
-                    <td>rgb(255, 179, 0)</td>
-                    <td>hsl(42, 100%, 50%)</td>
-                    <td>rgba(255, 179, 0, 0.5)</td>
-                </tr>
-            </tbody>
-        </table>
+            <div class="icons-grid">
 
-    </main>
+                <div>
+                    <span class="material-symbols-outlined">home</span>
+                    <p>Home</p>
+                </div>
 
+                <div>
+                    <span class="material-symbols-outlined">photo_camera</span>
+                    <p>Cámara</p>
+                </div>
+
+                <div>
+                    <span class="material-symbols-outlined">palette</span>
+                    <p>Paleta</p>
+                </div>
+
+                <div>
+                    <span class="material-symbols-outlined">menu</span>
+                    <p>Menú</p>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+      <!-- FOOTER -->
+  <footer class="footer">
+    <p>Hit Me Hard & Soft · Ariadna Martinez</p>
+  </footer>
+  
 </body>
 </html>

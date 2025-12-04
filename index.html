@@ -1,91 +1,103 @@
-<!DOCTYPE html>
-<html lang="ca">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercici 5 - Transicions</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="estils.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hit Me Hard & Soft — Inicio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="estils.css">
 </head>
-<body>
 
-    <header class="navbar">
-        <div class="logo"><a href="index.html">Exercici 005</a></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home (Transicions)</a></li>
-                <li><a href="galeria.html">Galeria (Animacions)</a></li>
-                <li><a href="guia-estil.html">Guia de estil</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="page page-transitions">
 
-    <main class="container">
-        <section class="hero">
-            <h1>Transicions CSS</h1>
-            <p>Practiquem l'efecte de canvi suau entre estats amb diferents funcions de temps.</p>
-            <a href="#targetes" class="btn">
-                Descobreix les targetes
-                <span class="material-icons-outlined">arrow_forward</span>
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="navbar">
+      <a class="brand" href="index.html">HMHAS</a>
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="guia-estil.html">Guía de estilo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="container">
+
+    <section class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-title">Hit Me Hard & Soft</h1>
+        <p class="hero-sub">Transiciones suaves, efectos sutiles y contraste líquido.</p>
+
+        <a class="cta" href="galeria.html">
+          <span class="material-symbols-outlined">play_arrow</span>
+          Explorar animaciones
+        </a>
+      </div>
+
+      <figure class="hero-art">
+        <img src="assets/img/cover.jpg" alt="Álbum HMHAS">
+      </figure>
+    </section>
+
+    <!-- TARJETAS -->
+    <section class="sec-tarjetas">
+      <h2>Tarjetas interactivas</h2>
+      <p>Prueba los efectos hover con diferentes curvas de transición.</p>
+
+      <div class="tarjetas">
+
+        <article class="card linear">
+          <div class="card-img"><img src="assets/img/photo1.jpg"></div>
+          <div class="card-body">
+            <h3>Lineal</h3>
+            <p>Una transición constante y predecible.</p>
+            <a href="#" class="card-btn">
+              Saber más <span class="material-symbols-outlined">arrow_forward</span>
             </a>
-        </section>
-        
-        <hr>
+          </div>
+        </article>
 
-        <section id="targetes">
-            <h2>Targetes interactives amb :hover</h2>
-            <div class="cards-interactive">
-                
-                <article class="card card-timing-linear">
-                    <div class="card-image-wrapper">
-                        <img src="assets/img/card-image-1.jpg" alt="Imatge 1" class="card-image default-image">
-                        <img src="assets/img/card-image-2.jpg" alt="Imatge 2 Hover" class="card-image hover-image">
-                    </div>
-                    <div class="card-content">
-                        <h3>Linear <span class="material-icons-outlined">compare_arrows</span></h3>
-                        <p>La transició és uniforme, sense acceleració ni desacceleració. $transition-timing-function: linear;$</p>
-                    </div>
-                </article>
+        <article class="card ease">
+          <div class="card-img"><img src="assets/img/photo2.jpg"></div>
+          <div class="card-body">
+            <h3>Ease</h3>
+            <p>Movimiento suave, natural y equilibrado.</p>
+            <a href="#" class="card-btn">
+              Saber más <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </article>
 
-                <article class="card card-timing-ease-in-out">
-                    <div class="card-image-wrapper">
-                        <img src="assets/img/card-image-3.jpg" alt="Imatge 3" class="card-image default-image">
-                        <img src="assets/img/card-image-4.jpg" alt="Imatge 4 Hover" class="card-image hover-image">
-                    </div>
-                    <div class="card-content">
-                        <h3>Ease-In-Out <span class="material-icons-outlined">speed</span></h3>
-                        <p>Lenta a l'inici i al final, ràpida al mig. Molt comuna. $transition-timing-function: ease-in-out;$</p>
-                    </div>
-                </article>
+        <article class="card ease-in-out">
+          <div class="card-img"><img src="assets/img/photo3.jpg"></div>
+          <div class="card-body">
+            <h3>Ease-in-out</h3>
+            <p>Aceleración progresiva y final suave.</p>
+            <a href="#" class="card-btn">
+              Saber más <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </article>
 
-                <article class="card card-timing-ease-out">
-                    <div class="card-image-wrapper">
-                        <img src="assets/img/card-image-5.jpg" alt="Imatge 5" class="card-image default-image">
-                        <img src="assets/img/card-image-6.jpg" alt="Imatge 6 Hover" class="card-image hover-image">
-                    </div>
-                    <div class="card-content">
-                        <h3>Ease-Out <span class="material-icons-outlined">exit_to_app</span></h3>
-                        <p>Ràpida a l'inici i lenta al final (desacceleració). $transition-timing-function: ease-out;$</p>
-                    </div>
-                </article>
+      </div>
+    </section>
 
-            </div>
-        </section>
+  </main>
 
-        <hr>
-
-        <section>
-            <h2>Transicions de text</h2>
-            <p>Observa el canvi de color i l'espaiat de les lletres al passar el ratolí.</p>
-            <ul class="secondary-menu">
-                <li><a href="#">Opció 1: Color</a></li>
-                <li><a href="#">Opció 2: Letter Spacing</a></li>
-                <li><a href="#">Opció 3: Color + Spacing</a></li>
-            </ul>
-        </section>
-
-    </main>
-
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Hit Me Hard & Soft · Ariadna Martinez</p>
+  </footer>
 </body>
 </html>
